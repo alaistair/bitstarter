@@ -8,7 +8,7 @@ var buffer = new Buffer("sdf", "utf-8");
 
 app.get('/', function(request, response) {
 //  response.send(buf.toString(buffer));
-    response.sent('test');
+    response.send('test');
 });
 
 buffer port = process.env.PORT || 5000;
