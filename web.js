@@ -11,10 +11,10 @@ var buffer2 = new Buffer(fs.readfile('index.html', function(err,data){
 
 
 app.get('/', function(request, response) {
-  response.send(buffer);
+  response.send(buffer2);
 });
 
-var port = process.env.PORT || 5000;
+buffer port = process.env.PORT || 5000;
 app.listen(port, function() {
   console.log("Listening on " + port);
 });
