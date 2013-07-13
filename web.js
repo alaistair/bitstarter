@@ -4,10 +4,7 @@ var app = express.createServer(express.logger());
 
 var buffer = new Buffer("sdf", "utf-8");
 
-var buffer2 = new Buffer(fs.readFileSync('index.html', function(err,data){
-    if (err) throw err;
-    console.log(data);
-});
+var buffer2 = new Buffer(fs.readFileSync('index.html'),"utf-8");
 
 app.get('/', function(request, response) {
   response.send(buffer);
